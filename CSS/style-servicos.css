@@ -1,0 +1,166 @@
+/*TITULO DA PAGINA*/
+.Titulo {
+    text-align: center;
+    padding: 50px 20px;
+    background: #cfcfcf;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+.Titulo h1 {
+    font-size: 40px;
+}
+
+/*TEXTO DE INTRODUÇÂO*/
+.intro-servico {
+    text-align: center;
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.5);
+    border-radius: 28px;
+}
+
+.intro-servico p {
+    padding: 10px;
+}
+
+/*5 CAIXAS DE INFORMAÇÃO DOS SERVIÇOS */
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-15px);
+    background-color: #C7A17A;
+
+
+}
+
+.box a {
+    text-decoration: none;
+    color: rgb(39, 36, 36);
+}
+
+
+.box h2 {
+    margin-top: 0;
+    font-size: 20px;
+
+}
+
+/*INFORMAÇÃO UM POR UM SOBRE OS SERVIÇOS*/
+.projeto img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -7px rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+
+}
+
+.projeto .palavra {
+    background-color: #cfcfcf;
+    border-radius: 80px;
+    padding: 30px;
+    box-shadow: 0px 0px 30px -7px rgb(0, 0, 0);
+}
+
+/*CAIXA DE FAZER ORÇAMENTO*/
+.fazer-orçamento {
+    background-color: #cfcfcf;
+    padding: 14px;
+    box-shadow: 0px 0px 30px -7px rgb(0, 0, 0);
+    border-radius: 90px;
+}
+
+.fazer-orçamento a {
+    background-color: #C7A17A;
+    color: black;
+    border-radius: 10px;
+    padding: 7px;
+    margin-left: 45%;
+    text-decoration: none;
+}
+
+.fazer-orçamento a:hover {
+    background-color: #1C1C1C;
+    color: #C7A17A;
+}
+
+.fazer-orçamento p {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:767px) {
+
+    .Titulo {
+        padding: 30px 15px;
+    }
+
+    .Titulo h1 {
+        font-size: 28px;
+    }
+
+
+
+    .intro-servico {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .intro-servico p {
+        font-size: 16px;
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .box h2 {
+        font-size: 18px;
+    }
+
+    .projeto img {
+        width: 80%;
+    }
+
+    .projeto .palavra {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+
+    .fazer-orçamento a {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .fazer-orçamento p {
+        font-size: 18px;
+    }
+
+    .fazer-orçamento {
+        border-radius: 40px;
+        padding: 20px;
+    }
+}
+
+

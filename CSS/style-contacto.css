@@ -1,0 +1,108 @@
+/*TITULO DA PAGINA*/
+.Titulo {
+    text-align: center;
+    padding: 50px 20px;
+    background: #cfcfcf;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+.Titulo h1 {
+    font-size: 40px;
+}
+
+/*FORMULARIO*/
+.form-container {
+    max-width: 800px;
+    background-color: #1C1C1C;
+    color: white;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #C7A17A;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+
+}
+
+.check-box {
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check-box input {
+    width: auto;
+    margin-right: 8px;
+
+}
+
+#form-contact input {
+    margin-bottom: 3px;
+
+}
+
+/*MENSAGEM DE ERRO*/
+.error-message {
+    color: red;
+    display: none;
+    font-size: 13px;
+}
+
+@media screen and (max-width:767px) {
+    .Titulo {
+        padding: 30px 15px;
+    }
+
+    .Titulo h1 {
+        font-size: 28px;
+    }
+
+    /* FORMULÁRIO RESPONSIVO */
+    .form-container {
+        margin: 15px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .check-box {
+        font-size: 10px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}

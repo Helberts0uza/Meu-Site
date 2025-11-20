@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/style-Inicio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+
+
+            <nav>
+                <a href="/HTML/index.html"><img class="Logo" src="/MEDIA/ArqHausConstrutora.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
+                    <li><a href="nossasObras.html">As Nossas Obras</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--CARROSSEL DE IMAGENS-->
+    <main>
+        <section class="container-img">
+            <div class="img-1">
+                <img src="/MEDIA/Construção1.jpg" class="active" alt="Construcao1">
+                <img src="/MEDIA/Construção2.jpg" alt="Construcao2">
+                <img src="/MEDIA/Construção3.jpg" alt="Construcao3">
+                <img src="/MEDIA/Construção4.jpg" alt="Construcao4">
+                <img src="/MEDIA/Contrução5.jpg" alt="Construcao5">
+
+            </div>
+
+        </section>
+
+        <section class="text-container">
+            <div class="text-apresentação">
+
+                <h1><span>ArqHaus</span></h1>
+                <h2>A transformar espaços, um projeto de cada vez.</h2>
+
+            </div>
+
+            <!--DESCRIÇÂO DA PAGINA COM UM BOTÂO PARA IR DIRETO PARA CONTACTO-->
+            <div class="descrição">
+                <p> Na <strong>ArqHaus Construtora</strong>, damos vida às suas ideias: remodelação de apartamentos e
+                    residências,
+                    construção
+                    do zero e soluções chave na mão. Sem complicações, sem surpresas. Apenas resultados de qualidade,
+                    com
+                    preços acessíveis.</p>
+
+                <a href="/HTML/contacto.html">Fazer Orçamento</a>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!--CAIXA DE QUEM SOMOS-->
+        <section class="Somos">
+            <div>
+                <h3>Quem Somos.</h3>
+                <p>
+
+                    Fundada em 2025, a ArqHaus Construtora nasceu com uma missão clara: transformar ideias em espaços
+                    concretos, entregando cada projeto com qualidade, pontualidade e atenção aos detalhes, sem custos
+                    escondidos.
+                </p>
+                <p>Ao longo dos anos, crescemos e evoluímos, acompanhando as tendências e exigências do mercado da
+                    construção, mas sem jamais perder o que nos distingue: transparência, rigor e proximidade com os
+                    nossos clientes.
+                </p>
+                <p>Seja em remodelações residenciais, construção do zero ou soluções “chave na mão”, o nosso objetivo é
+                    sempre o mesmo: criar espaços que refletem perfeitamente a visão de cada cliente.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <br>
+
+
+    <!--5 BOTÕes PARA MOSTRAR OS SERVIÇOS DA EMPRESA-->
+
+    <button class="botao" onclick="show(1)">Remodelação de Casas.</button>
+    <button class="botao" onclick="show(2)">Remodelação Comercial.</button>
+    <button class="botao" onclick="show(3)">Reabilitação de Fachadas.</button>
+    <button class="botao" onclick="show(4)">Construção de Raíz.</button>
+    <button class="botao" onclick="show(5)">Construção Chave na Mão.</button>
+
+    <!--AONDE VAI APARECER O TEXTO E AS IMAGENS-->
+    <div id="display" style="margin-top:20px;">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr style="display: flex; margin: 0;">
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+            <a href="/HTML/index.html"><img class="Logo2" src="/MEDIA/ArqHausConstrutora.png" alt="Logo"></a>
+
+            <div class="coluna ">
+                <h3>Empresa</h3>
+                <p><a href="/HTML/quemSomos.html">quem somos</a></p>
+                <p><a href="/HTML/contacto.html ">Contactos</a></p>
+                <p><a href="/HTML/nossasObras.html">Nossas Obras</a></p>
+                <p><a href="/HTML/servicos.html">Serviços</a></p>
+
+            </div>
+
+            <div class="coluna ">
+
+                <h3>Serviços</h3>
+
+                <p>Remodelação de Casas</p>
+                <p>Remodelações Comerciais</p>
+                <p>Reabilitação de Fachadas.</p>
+                <p>Construção de Raíz</p>
+                <p> Projetos Chave na Mão </p>
+
+
+            </div>
+
+            <div class="coluna">
+                <h3>Contactos</h3>
+
+                <p><strong>Email:</strong> arqhaus@gmail.com</p>
+                <p><strong>Telefone:</strong> 213453421</p>
+                <p><strong>Morada:</strong> Rua Lisboa n23 </p>
+
+
+
+            </div>
+
+            <div>
+                <p>Trabalho criado por Helbert Souza</p>
+                <p>© 2025 ArqHaus Construtora Todos os direitos reservados</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!--JAVA SCRIPT-->
+    <script>
+        //INFORMAÇÕES E IMAGENS QUE VÃO APARECER ASSIM QUE CARREGARMOS UM DOS BOTÕES
+        const images = {
+            1: {
+                img: `/MEDIA/remodulacaoCasas.jpg`, text: `Quer dar uma nova cara à sua casa?
+            Cuidamos de todo o processo de remodelação residencial, desde o planeamento até à entrega final.
+            Tornamos o seu espaço mais bonito, prático e valorizado — como sempre sonhou!
+            Peça o seu orçamento e transforme a sua casa hoje mesmo.` },
+
+            2: {
+                img: `/MEDIA/remodelacaoComercial.jpg`, text: `Quer dar uma nova imagem ao seu negócio?
+            Cuidamos de todo o processo de remodelação comercial, desde o projeto até à execução final.
+            Criamos espaços modernos, funcionais e que valorizam a identidade da sua marca — perfeitos para receber
+            clientes e inspirar a sua equipa.
+            Peça o seu orçamento e transforme o seu espaço comercial num verdadeiro cartão de visita!` },
+
+            3: {
+                img: `/MEDIA/ReabelitcaoFachadas.jpg`, text: `A primeira impressão conta — e a fachada é o cartão de visita de qualquer edifício.
+            Cuidamos de todo o processo de reabilitação de fachadas, desde a limpeza e reparação estrutural até ao
+            acabamento final.
+            Trabalhamos com técnicas modernas e materiais de qualidade, garantindo durabilidade, segurança e valorização
+            do imóvel.
+            Renove a imagem do seu edifício e devolva-lhe o brilho de novo!` },
+
+            4: {
+                img: `/MEDIA/construçãoRaíz.jpg`, text: `texto:Sonha em construir a sua casa ou espaço comercial do zero?
+            A nossa equipa acompanha cada etapa da construção de raiz, desde o projeto inicial até à entrega final.
+            Com planeamento rigoroso, materiais de qualidade e atenção a cada detalhe, transformamos o seu terreno num
+            espaço único, moderno e funcional.
+            Construa connosco — o futuro começa na base!` },
+
+            5: {
+                img: `/MEDIA/construçãoChaveMão..jpg`, text: `reabilitação de edifícios antigos.
+            Contamos com um amplo portefólio de projetos realizados, sempre superando as expectativas dos nossos
+            clientes e entregando resultados de qualidade, funcionais e esteticamente diferenciados.` },
+        };
+
+      function show(n) {
+        const d = document.getElementById('display');
+
+   
+        d.classList.remove("show");
+
+        
+        setTimeout(() => {
+            d.innerHTML = `
+                <img src="${images[n].img}" alt="">
+                <p>${images[n].text}</p>
+            `;
+
+           
+            d.classList.add("show");
+        }, 500);
+    }
+    </script>
+
+
+
+
+
+
+
+    <script src="/SCRIPT/script.js"></script>
+    <script src="/SCRIPT/img.js"></script>
+
+</body>
+
+</html>

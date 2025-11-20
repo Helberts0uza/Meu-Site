@@ -1,0 +1,185 @@
+/*TITULO DA PAGINA*/
+.Titulo {
+    text-align: center;
+    padding: 50px 20px;
+    background: #cfcfcf;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+.Titulo h1 {
+    font-size: 40px;
+}
+
+/*GALERIA DE PROJETOS*/
+.galeria {
+    padding: 40px;
+}
+
+.container-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*CAIXA DE ANTES E DEPOIS*/
+.antes-depois {
+    padding: 40px;
+    background-color: #cfcfcf;
+    margin-top: 40px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+
+.comparar {
+    text-align: center;
+}
+
+.comparar img {
+    border-radius: 15px;
+    border: solid black;
+}
+
+.comparar p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*CAIXA DE FAZER ORÇAMENTO*/
+.fazer-orçamento a {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 7px;
+    margin-left: 45%;
+    text-decoration: none;
+}
+
+.fazer-orçamento a:hover {
+    background-color: #1C1C1C;
+    color: #C7A17A;
+}
+
+.fazer-orçamento p {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width:767px) {
+
+    /* TÍTULO */
+    .Titulo {
+        padding: 30px 15px;
+      }
+    
+      .Titulo h1 {
+        font-size: 28px;
+      }
+    
+    }
+
+    .projeto img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .projeto h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    /* ANTES E DEPOIS */
+    .antes-depois {
+        padding: 40px;
+        background-color: #cfcfcf;
+        margin-top: 40px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+    
+    .comparar {
+        text-align: center;
+    }
+    
+    .comparar img {
+        border-radius: 15px;
+        border: solid black;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .comparar p {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    /* FAZER ORÇAMENTO */
+    .fazer-orçamento a {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 7px 15px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .fazer-orçamento a:hover {
+        background-color: #1C1C1C;
+        color: #C7A17A;
+    }
+    
+    .fazer-orçamento p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    
+    @media screen and (max-width:767px) {
+    
+        .Titulo {
+            padding: 30px 15px;
+        }
+    
+        .Titulo h1 {
+            font-size: 28px;
+        }
+    
+        .galeria {
+            padding: 40px;
+        }
+    
+        .container-galeria {
+            grid-template-columns: 1fr; 
+        }
+    
+        .antes-depois {
+            padding: 20px;
+        }
+    
+        .comparar p {
+            font-size: 18px;
+        }
+    
+        .fazer-orçamento a {
+            margin: 0 auto;
+            display: block;
+           text-align: center;
+            font-size: 18px;
+        }
+    
+        .fazer-orçamento p {
+            font-size: 18px;
+        }
+    }
